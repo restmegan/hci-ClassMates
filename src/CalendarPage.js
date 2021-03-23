@@ -8,6 +8,8 @@ import {useState} from 'react';
 
 const localizer = momentLocalizer(moment);
 
+// Creates a TalkJS user assuming that the currentUser is passed as a prop to our component.
+// The Talk.User object is used to synchronize user data with TalkJS, so we can display it inside the chat UI.
 class CalendarPage extends Component {
   state = {
     events: [
@@ -36,5 +38,5 @@ class CalendarPage extends Component {
   }
 }
 
-  
+
 export default CalendarPage;
