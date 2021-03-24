@@ -11,13 +11,10 @@ var lucyEaton = new Talk.User({
   welcomeMessage: "Hello! Good to see you in class today :)"
 });
 
-var edJones = new Talk.User({
+const edJones = new Talk.User({
   id: "12321",
   name: "Ed Jones",
   email: "edjones@example.com",
   photoUrl: "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
   welcomeMessage: "Hey have you started the assignment yet?"
 })
-
-
-export {lucyEaton};

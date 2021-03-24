@@ -3,7 +3,7 @@ import Talk from "talkjs";
 
 import "./styles.css";
 import {useState} from 'react';
-//import SampleData from "./SampleData"
+// import SampleData from "./SampleData"
 
 // Creates a TalkJS user assuming that the currentUser is passed as a prop to
 // our component. The Talk.User object is used to synchronize user data with
@@ -38,6 +38,24 @@ class InboxComponent extends Component {
         // window.talkSession.setDesktopNotificationEnabled("");
       }
 
+      // Function to create and return a new conversation
+      function newConversation(users) {
+        if (users.length > 1) {
+          var id = (Math.random() * 10000);
+        }
+        else {
+          var id = Talk.oneOnOneId(me, users[0]);
+        }
+        var newConvo = window.talkSession.getOrCreateConversation(id);
+        newConvo.setParticipant(me);
+
+        var i;
+        for(i=0; i < users.length; i++) {
+          newConvo.setParticipant(users[i]);
+        };
+        return newConvo;
+      }
+
       // Hard-coded dummy users to test chatting with
       var johnSmith = new Talk.User({
         id: "54321",
@@ -57,17 +75,19 @@ class InboxComponent extends Component {
 
       // Creating sample conversation. oneOnOneId is a helper method that
       // generates a unique conversation ID for a given pair of users.
-      var conversation = window.talkSession.getOrCreateConversation(Talk.oneOnOneId(me, johnSmith));
-      conversation.setParticipant(me);
-      conversation.setParticipant(johnSmith);
-
+      var convoJohn = newConversation([johnSmith]);
+      //
       // Creating some more filler coversations with our SampleData
-      var convoLucy = window.talkSession.getOrCreateConversation(Talk.oneOnOneId(me, lucyEaton))
-      convoLucy.setParticipant(me);
-      convoLucy.setParticipant(lucyEaton);
+      var convoLucy = newConversation([lucyEaton]);
+
+
+      var convoGroup = window.talkSession.getOrCreateConversation("group1");
+      convoGroup.setParticipant(me);
+      convoGroup.setParticipant(johnSmith);
+      convoGroup.setParticipant(lucyEaton);
 
       // Creating an inbox
-      var inbox = window.talkSession.createInbox({selected: conversation});
+      var inbox = window.talkSession.createInbox({selected: convoGroup});
       inbox.mount(this.talkjsContainer.current); //Mounting the inbox
     });
   }
