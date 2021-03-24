@@ -45,8 +45,16 @@ class Popup extends React.Component {
         //onChange={onChange}
        // value={value}
       />
+       </div> 
+       <div>
+        <Button
+        name = "Cancel"
+        onClick={this.props.closePopup}
+        />
+        <Button
+        name = "Schedule Meeting"
+        />
        </div>
-      <button onClick={this.props.closePopup}>close me</button>
       </div>
       </div>
     );
