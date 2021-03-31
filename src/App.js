@@ -1,6 +1,13 @@
 import "./styles.css";
 import {useState} from 'react';
 import "milligram";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 export default function App() {
 
@@ -13,10 +20,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello ClassMates</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <p>hi</p>
-    <button onClick={handleClick}>{buttonText}</button>
       <h1>ClassMates</h1>
       <div className="row">
         <div className="column box">
@@ -33,4 +36,8 @@ export default function App() {
       </div>
     </div>
   );
+}
+
+// Provides the basic home-page render
+function Home() {
 }
