@@ -1,0 +1,5 @@
+/// <reference types="react" />
+import type { MessageInputProps } from './MessageInput';
+import type { CustomTrigger, DefaultAttachmentType, DefaultChannelType, DefaultMessageType, DefaultUserType } from '../../../types/types';
+export declare const MessageInputFlat: <At extends DefaultAttachmentType = DefaultAttachmentType, Ch extends DefaultChannelType = DefaultChannelType, Co extends string & {} = string & {}, Ev extends Record<string, unknown> = Record<string, unknown>, Me extends DefaultMessageType = DefaultMessageType, Re extends Record<string, unknown> = Record<string, unknown>, Us extends DefaultUserType<Us> = DefaultUserType<import("../../../types/types").DefaultUserTypeInternal>, V extends CustomTrigger = CustomTrigger>(props: MessageInputProps<At, Ch, Co, Ev, Me, Re, Us, V>) => JSX.Element;
+//# sourceMappingURL=MessageInputFlat.d.ts.map

@@ -1,0 +1,15 @@
+import React from 'react';
+export declare type LoadingIndicatorProps = {
+    /** Set the color of the LoadingIndicator */
+    color?: string;
+    /** The size of the loading icon
+     * @default 15px
+     */
+    size?: number;
+};
+/**
+ * LoadingIndicator - Just a simple loading spinner.
+ * @example ./LoadingIndicator.md
+ */
+export declare const LoadingIndicator: React.FC<LoadingIndicatorProps>;
+//# sourceMappingURL=LoadingIndicator.d.ts.map

@@ -1,0 +1,4 @@
+import { RetrySendMessage } from '../../../context/ChannelContext';
+import type { DefaultAttachmentType, DefaultChannelType, DefaultMessageType, DefaultUserType } from '../../../../types/types';
+export declare const useRetryHandler: <At extends DefaultAttachmentType = DefaultAttachmentType, Ch extends DefaultChannelType = DefaultChannelType, Co extends string & {} = string & {}, Ev extends Record<string, unknown> = Record<string, unknown>, Me extends DefaultMessageType = DefaultMessageType, Re extends Record<string, unknown> = Record<string, unknown>, Us extends DefaultUserType<Us> = DefaultUserType<import("../../../../types/types").DefaultUserTypeInternal>>(customRetrySendMessage?: RetrySendMessage<At, Ch, Co, Ev, Me, Re, Us> | undefined) => RetrySendMessage<At, Ch, Co, Ev, Me, Re, Us>;
+//# sourceMappingURL=useRetryHandler.d.ts.map

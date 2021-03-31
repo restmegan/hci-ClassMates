@@ -1,0 +1,172 @@
+.str-chat__list {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* enable smooth scrolling on ios */
+  padding: 0 0 0 0;
+
+  .str-chat__reverse-infinite-scroll {
+    padding-top: 75px;
+  }
+
+  &-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--thread {
+    padding: 15px 0 0 0;
+    overflow: visible;
+  }
+  &__center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.str-chat__ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.str-chat__custom-notification {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 8px;
+  font-family: $second-font;
+  text-align: center;
+
+  &.notification-success {
+    background: rgba(2, 208, 2, 0.1);
+    border: 1px solid rgba(2, 208, 2, 0.1);
+    color: green;
+  }
+
+  &.notification-error {
+    background: rgba(208, 2, 27, 0.1);
+    border: 1px solid rgba(208, 2, 27, 0.1);
+    color: #f00;
+  }
+}
+
+.str-chat__connection-issue {
+  background: rgba(208, 2, 27, 0.1);
+  border: 1px solid rgba(208, 2, 27, 0.1);
+  color: #f00;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 8px;
+  font-family: $second-font;
+  text-align: center;
+}
+
+.str-chat__list-notifications {
+  padding: 0 40px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.messaging {
+  &.str-chat {
+    .str-chat {
+      &__list {
+        padding: 0 40px 0;
+        background: white;
+        .str-chat__reverse-infinite-scroll {
+          padding-top: 55px;
+        }
+        &-notifications {
+          background: white;
+        }
+      }
+    }
+    @media screen and (max-width: 960px) {
+      .str-chat {
+        &__list {
+          padding: 0 10px 0;
+          .str-chat__reverse-infinite-scroll {
+            padding-top: 55px;
+          }
+          &-notifications {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    &.dark {
+      .str-chat__list {
+        background: rgba(white, 0.04);
+        &-notifications {
+          background: rgba(white, 0.04);
+        }
+      }
+    }
+  }
+}
+
+.livestream {
+  &.str-chat {
+    .str-chat {
+      &__list {
+        padding: 0 10px;
+        .str-chat__reverse-infinite-scroll {
+          padding-top: 55px;
+        }
+      }
+    }
+  }
+}
+
+.commerce {
+  &.str-chat {
+    .str-chat {
+      &__list {
+        padding: 0 20px 0;
+        .str-chat__reverse-infinite-scroll {
+          padding-top: 75px;
+        }
+        &-notifications {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+      }
+    }
+  }
+}
+
+.str-chat__virtual-list {
+  position: relative;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* enable smooth scrolling on ios */
+  background: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  // conditionally showing the header displaces items when prepending.
+  // a simple workaround is to make the loading indicator an overlay.
+  &__loading {
+    display: flex;
+    padding-top: 8px;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+  }
+
+  p {
+    margin: 0 !important; // always use padding, margin mess up the height calculations
+  }
+}
+
+.dark .str-chat__virtual-list {
+  background: rgba(255, 255, 255, 0.04);
+}

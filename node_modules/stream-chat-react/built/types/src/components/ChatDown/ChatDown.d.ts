@@ -1,0 +1,15 @@
+import React from 'react';
+export declare type ChatDownProps = {
+    /** The type of error */
+    type: string;
+    /** The image url for this error */
+    image?: string;
+    /** The error message to show */
+    text?: string;
+};
+/**
+ * ChatDown - A simple indicator that chat functionality isn't available, triggered when the Chat API is unavailable or your network isn't working.
+ * @example ./ChatDown.md
+ */
+export declare const ChatDown: React.FC<ChatDownProps>;
+//# sourceMappingURL=ChatDown.d.ts.map

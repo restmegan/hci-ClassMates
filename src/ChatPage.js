@@ -1,20 +1,15 @@
 import "./styles.css";
-import {useState} from 'react';
-import InboxComponent from "./InboxComponent"
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from "./ChatPageUI/src/App.js"
 
 export default function ChatPage() {
-
-  const [buttonText, setButtonText] = useState("Start new conversation");
-
-  function handleClick(){
-   setButtonText("sike!");
-  }
-
+  
   return (
     <div className="ChatPage">
-      <h1>ClassMates</h1>
-      <button onClick={handleClick}>{buttonText}</button>
-      <InboxComponent />
+      <App />
     </div>
   );
 }

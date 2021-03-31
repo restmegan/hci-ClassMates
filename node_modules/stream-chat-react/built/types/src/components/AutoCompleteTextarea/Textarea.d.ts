@@ -1,0 +1,82 @@
+export default ReactTextareaAutocomplete;
+declare class ReactTextareaAutocomplete extends React.Component<any, any, any> {
+    static defaultProps: {
+        closeOnClickOutside: boolean;
+        maxRows: number;
+        minChar: number;
+        movePopupAsYouType: boolean;
+        scrollToItem: boolean;
+        value: string;
+    };
+    constructor(props: any);
+    getSelectionPosition: () => {
+        selectionEnd: number;
+        selectionStart: number;
+    } | null;
+    getSelectedText: () => any;
+    setCaretPosition: (position?: number) => void;
+    getCaretPosition: () => number;
+    _onEnter: (event: any) => void;
+    _onSpace: () => void;
+    _replaceWord: () => void;
+    _onSelect: (newToken: any) => void;
+    _getItemOnSelect: () => ((item: any) => any) | null;
+    _getTextToReplace: () => ((item: any) => any) | null;
+    _getCurrentTriggerSettings: () => any;
+    _getValuesFromProvider: () => void;
+    _getSuggestions: () => null;
+    _createRegExp: () => void;
+    tokenRegExp: RegExp | undefined;
+    _update({ trigger, value }: {
+        trigger: any;
+        value: any;
+    }): void;
+    /**
+     * Close autocomplete, also clean up trigger (to avoid slow promises)
+     */
+    _closeAutocomplete: () => void;
+    _cleanUpProps: () => {
+        [x: string]: any;
+        children?: React.ReactNode;
+    };
+    _isCommand: (text: any) => boolean;
+    _changeHandler: (e: any) => void;
+    _selectHandler: (e: any) => void;
+    _onClickAndBlurHandler: (e: any) => void;
+    _onScrollHandler: () => void;
+    _dropdownScroll: (item: any) => void;
+    renderSuggestionListContainer(): JSX.Element | null;
+    dropdownRef: HTMLDivElement | null | undefined;
+    textareaRef: HTMLTextAreaElement | null | undefined;
+}
+declare namespace ReactTextareaAutocomplete {
+    namespace propTypes {
+        export const className: PropTypes.Requireable<string>;
+        export const closeOnClickOutside: PropTypes.Requireable<boolean>;
+        export const containerClassName: PropTypes.Requireable<string>;
+        export const containerStyle: PropTypes.Requireable<object>;
+        export const disableMentions: PropTypes.Requireable<boolean>;
+        export const dropdownClassName: PropTypes.Requireable<string>;
+        export const dropdownStyle: PropTypes.Requireable<object>;
+        export const itemClassName: PropTypes.Requireable<string>;
+        export const itemStyle: PropTypes.Requireable<object>;
+        export const listClassName: PropTypes.Requireable<string>;
+        export const listStyle: PropTypes.Requireable<object>;
+        export const loaderClassName: PropTypes.Requireable<string>;
+        export const loaderStyle: PropTypes.Requireable<object>;
+        export const loadingComponent: PropTypes.Requireable<PropTypes.ReactComponentLike>;
+        export const minChar: PropTypes.Requireable<number>;
+        export const onBlur: PropTypes.Requireable<(...args: any[]) => any>;
+        export const onCaretPositionChange: PropTypes.Requireable<(...args: any[]) => any>;
+        export const onChange: PropTypes.Requireable<(...args: any[]) => any>;
+        export const onSelect: PropTypes.Requireable<(...args: any[]) => any>;
+        export const style: PropTypes.Requireable<object>;
+        export const SuggestionList: PropTypes.Requireable<PropTypes.ReactComponentLike>;
+        export { triggerPropsCheck as trigger };
+        export const value: PropTypes.Requireable<string>;
+    }
+}
+import React from "react";
+import PropTypes from "prop-types";
+import { triggerPropsCheck } from "./utils";
+//# sourceMappingURL=Textarea.d.ts.map

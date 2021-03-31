@@ -1,0 +1,5 @@
+/// <reference types="react" />
+import type { Channel, Event } from 'stream-chat';
+import type { DefaultAttachmentType, DefaultChannelType, DefaultMessageType, DefaultUserType } from '../../../../types/types';
+export declare const useChannelHiddenListener: <At extends DefaultAttachmentType = DefaultAttachmentType, Ch extends DefaultChannelType = DefaultChannelType, Co extends string & {} = string & {}, Ev extends Record<string, unknown> = Record<string, unknown>, Me extends DefaultMessageType = DefaultMessageType, Re extends Record<string, unknown> = Record<string, unknown>, Us extends DefaultUserType<Us> = DefaultUserType<import("../../../../types/types").DefaultUserTypeInternal>>(setChannels: import("react").Dispatch<import("react").SetStateAction<Channel<At, Ch, Co, Ev, Me, Re, Us>[]>>, customHandler?: ((setChannels: import("react").Dispatch<import("react").SetStateAction<Channel<At, Ch, Co, Ev, Me, Re, Us>[]>>, event: Event<At, Ch, Co, Ev, Me, Re, Us>) => void) | undefined) => void;
+//# sourceMappingURL=useChannelHiddenListener.d.ts.map
