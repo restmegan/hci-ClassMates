@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.box {
+  border-style: solid;
+}
+
 /*
 .CalendarPage {
   react-big-calendar/lib/css/react-big-calendar.css
