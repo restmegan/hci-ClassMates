@@ -11,6 +11,8 @@ import "milligram";
 import CalendarPage from "./CalendarPage";
 import ChatPage from "./ChatPage";
 
+import { MessagingChannelList } from './streamchats-code/src/components';
+
 export default function App() {
   return (
     <Router>
@@ -42,7 +44,7 @@ export default function App() {
         </ul>
         </div>
 
-        
+
       </div>
     </Router>
   );
@@ -59,6 +61,8 @@ function Home() {
         </div>
         <div className="column">
           <h3><Link to="/chat">Chat</Link></h3>
+          <h6>Back-end of this in development</h6>
+          // <img src="ChatFeedPic.png" alt="Img not found"></img>
         </div>
         <div className="column">
           <h3><Link to="/calendar">Calendar</Link></h3>

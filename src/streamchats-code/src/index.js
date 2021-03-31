@@ -12,4 +12,6 @@
 // // unregister() to register() below. Note this comes with some pitfalls.
 // // Learn more about service workers: http://bit.ly/CRA-PWA
 // serviceWorker.unregister();
-export * from "./components";
+
+// export * from "./components";
+export { default as MessagingChannelList } from './components/MessagingChannelList/MessagingChannelList';
