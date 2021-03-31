@@ -1,6 +1,7 @@
 import "./styles.css";
 import {useState} from 'react';
 import "milligram";
+import MessagingChannelList from "./streamchats-code/src/"
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,6 +30,7 @@ export default function App() {
         </div>
         <div className="column">
           <h3>Chats</h3>
+          <MessagingChannelList />
         </div>
         <div className="column">
           <h3>Schedule</h3>
