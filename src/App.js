@@ -12,6 +12,7 @@ import CalendarPage from "./CalendarPage";
 import ChatPage from "./ChatPage";
 
 import { MessagingChannelList } from './streamchats-code/src/components';
+import ChatFeedPic from "./ChatFeedPic.png";
 
 export default function App() {
   return (
@@ -59,10 +60,10 @@ function Home() {
           <p> blank</p>
           <p> more space</p>
         </div>
-        <div className="column">
+        <div className="column box">
           <h3><Link to="/chat">Chat</Link></h3>
           <h6>Back-end of this in development</h6>
-          // <img src="ChatFeedPic.png" alt="Img not found"></img>
+          <img src={ChatFeedPic} alt="Img not found"></img>
         </div>
         <div className="column">
           <h3><Link to="/calendar">Calendar</Link></h3>
