@@ -9,7 +9,7 @@ Startup Instructions:
 4. Now, type the command `cd hci-Classmates` to navigate into the codebase
 5. Next, type `npm -v` to check if you have npm installed
    a. If it prints out a version number, then you have it installed
-   b. Otherwise, install npm using sudo or homebrew
+   b. Otherwise, install npm using sudo or homebrew - see https://phoenixnap.com/kb/install-node-js-npm-on-windows for Windows or https://changelog.com/posts/install-node-js-with-homebrew-on-os-x for Mac
 6. Next, type the command `npm install` to install all the dependencies required to run the interface.
 7. Now, to finally start the interface, type the command `npm start`.
 8. A browser window should open automatically with the interface displayed. This may take a moment. If nothing opens, navigate to “localhost:3000” in your browser.
