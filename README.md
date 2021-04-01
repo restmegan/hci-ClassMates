@@ -30,10 +30,10 @@ First, we will have you download a version of the interface and run it per the s
 Now that you have the interface up and running, we have prepared 4 different tasks for you to complete in this interface testing session. Just to make things more comfortable, we want to convey that the user is always right, so no matter what you say or do you are correct. If anything confuses you at any point that’s perfectly fine because that tells us something we need to improve in our design. So, please tell us what makes sense or is confusing, and any questions you have in the process. Feel free to let us know what you think through during your steps, what your motivation to click on something was, or why and how something should work in your opinion. It can be literally anything you want to share with us.
 Let’s begin!
 Here are the four tasks. Make sure you navigate back to the home page after completing each task.
-Send a message in an existing chat.
-Make a new group chat with John and Lucy.
-Schedule a group meeting.
-Join an open study group meeting.
+1. Send a message in an existing chat.
+2. Make a new group chat with John and Lucy.
+3. Schedule a group meeting.
+4. Join an open study group meeting.
 
 Thank you for your participation and remember that it is a prototype and there it is good for us if you make mistakes and let us know if anything is confusing, it is our job to improve the interface.
 Good luck!
