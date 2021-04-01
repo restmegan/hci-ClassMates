@@ -18,8 +18,10 @@ export default function App() {
   return (
     <Router>
       <div>
+      <div className="App">
         <h1>ClassMates</h1>
         <h6><Link to="/">Home</Link></h6>
+        </div>
         <Switch>
           <Route path="/chat">
             <ChatPage />
@@ -31,39 +33,29 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-        <div class="row">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/chat">Chat</Link>
-          </li>
-          <li>
-            <Link to="/calendar">Calendar</Link>
-          </li>
-        </ul>
-        </div>
-
-
       </div>
     </Router>
   );
 }
 
+
 function Home() {
+
   return (
   <div className="App">
     <div class="grid-container">
         <div class="grid-item">
-          <h3>Happening Now</h3>
-          <p> blank</p>
-          <p> more space</p>
+          <h3>Happening Now:</h3>
+          <p> Study Meeting with Alice</p>
+          <button onClick={() =>
+            {alert("Loading Zoom Meeting... (back-end not supported, go back)")}}>
+            Join Now</button>
         </div>
         <div class="grid-item">
           <h3><Link to="/chat">Chat</Link></h3>
-          <h6>Back-end of this in development</h6>
-          <img src={ChatFeedPic} alt="Img not found"></img>
+          <img src={ChatFeedPic} alt="Img not found"
+          width="100%" onClick={() =>
+            {alert("This back-end is not yet supported, click 'Chat' to navigate to your chats")}}></img>
         </div>
         <div className="grid-item">
           <h3><Link to="/calendar">Calendar</Link></h3>

@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #212326;
+  background: #fafafa;
+  /* 212326 */
 }
 
 body::-webkit-scrollbar {

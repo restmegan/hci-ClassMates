@@ -1,6 +1,9 @@
+
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .box {
@@ -8,6 +11,14 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  justify-content: center;
+  display: inline-grid;
+  /* border: solid; */
+  grid-column-gap: 50px;
+  grid-template-columns: 40% 40% 40%;
+}
+
+.grid-item {
+  border: solid;
+  padding: 30px;
 }
