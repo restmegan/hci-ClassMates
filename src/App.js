@@ -54,18 +54,18 @@ export default function App() {
 function Home() {
   return (
   <div className="App">
-      <div className="row">
-        <div className="column box">
+    <div class="grid-container">
+        <div class="grid-item">
           <h3>Happening Now</h3>
           <p> blank</p>
           <p> more space</p>
         </div>
-        <div className="column box">
+        <div class="grid-item">
           <h3><Link to="/chat">Chat</Link></h3>
           <h6>Back-end of this in development</h6>
           <img src={ChatFeedPic} alt="Img not found"></img>
         </div>
-        <div className="column">
+        <div className="grid-item">
           <h3><Link to="/calendar">Calendar</Link></h3>
         </div>
       </div>
