@@ -2,7 +2,7 @@
 code base for ClassMates interface, developed for IS4300: Human Computer Interaction
 
 ## Instructions for Testing
-Clone this repository onto you local device.
+Download this repository onto your local device.
 In the terminal, navigate into the folder with the contents of this repository and run 
 
 `npm start`
