@@ -12,7 +12,7 @@ A browser window should open automatically with the interface displayed. If not,
 Note: the home page is under construction
 
 ## Tasks
-Send a message in an existing chat.
-Make a new group chat with John and Lucy.
-Schedule a group meeting.
-Join an open study group meeting.
+1. Send a message in an existing chat.
+2. Make a new group chat with John and Lucy.
+3. Schedule a group meeting.
+4. Join an open study group meeting.
