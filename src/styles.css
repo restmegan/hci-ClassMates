@@ -15,7 +15,7 @@
   display: inline-grid;
   /* border: solid; */
   grid-column-gap: 50px;
-  grid-template-columns: 40% 40% 40%;
+  grid-template-columns: 30% 30% 30%;
 }
 
 .grid-item {

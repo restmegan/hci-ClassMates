@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const Button = styled.button`
   display: inline-block;
-  background-color: lilac;
+  background-color: rgb(72, 28, 125);
+  color: #fafafa;
   border-color: papayawhip;
   font-size: 1em;
   borser-style: none;
