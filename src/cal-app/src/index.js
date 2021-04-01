@@ -7,7 +7,7 @@ import NavButton from "./components/NavButton";
 import BigCalendar from "./components/BigCalendar";
 import PopUp from "./components/PopUp";
 
-class CalendarPage extends React.Component {
+class CalendarUI extends React.Component {
 
   constructor(props){
 
@@ -24,15 +24,7 @@ class CalendarPage extends React.Component {
   render() {
     return (
       <div className="CalendarPage">
-      <h1>ClassMates</h1>
-      <div>
-      <NavButton
-      name = "Chat"
-      />
-      <NavButton
-      name = "Schedule"
-      />
-      </div>
+      
 
       <View style={{flexDirection:'row',
                           justifyContent: 'center',
@@ -65,6 +57,6 @@ class CalendarPage extends React.Component {
       </div>
     )};
   }
-
-  const rootElement = document.getElementById("root");
-  ReactDOM.render(<CalendarPage />, rootElement);
+export default CalendarUI;
+  // const rootElement = document.getElementById("root");
+  // ReactDOM.render(<CalendarPage />, rootElement);

@@ -7,7 +7,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
-import "milligram";
+//import "milligram";
 import CalendarPage from "./CalendarPage";
 import ChatPage from "./ChatPage";
 
