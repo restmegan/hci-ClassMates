@@ -55,6 +55,18 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06), 0px 2px 30px rgba(0, 0, 0, 0.1);
 }
 
+.messaging__channel-list__header__button:hover {
+  background: #dadada;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.07);
+  transition: background 0.1s ease-in-out;
+}
+
+.messaging__channel-list__header__button:active {
+  background: #bababa;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.07);
+  transition: background 0.1s ease-in-out;
+}
+
 .messaging__channel-list__header__button svg path {
   fill: #005fff;
 }

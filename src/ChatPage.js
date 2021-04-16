@@ -9,7 +9,9 @@ export default function ChatPage() {
 
   return (
     <div className="ChatPage">
+      <body onLoad="window.scroll(0, 0)">
       <App />
+      </body>
     </div>
   );
 }
