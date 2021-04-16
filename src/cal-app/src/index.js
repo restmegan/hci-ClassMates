@@ -24,39 +24,48 @@ class CalendarUI extends React.Component {
   render() {
     return (
       <div className="CalendarPage">
-      
 
+      <View style={{flexDirection:'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 0}}>
       <View style={{flexDirection:'row',
-                          justifyContent: 'center',
-                          alignItems: 'center'}}>
-            <div>
-              <BigCalendar/>
-            </div>
-            <View style={{flexDirection:'column'}}>
-            <div>
-              <Button
-              name = "Start Instant Meeting"
-              />
-              </div>
-              <div>
-              <Button
-              name = "Plan a Future Meeting"
-              onClick = {this.togglePopup.bind(this)}
+                    zIndex: 1}}>
+      <div>
+      <Button
+      name = "Start Instant Meeting"
+      onClick = {this.togglePopup.bind(this)}
       />
       {this.state.showPopup ?
-       <PopUp
+        <PopUp
         closePopup={this.togglePopup.bind(this)}
         />
-       : null
+        : null
       }
 
+      </div>
+      <div>
+      <Button
+      name = "Plan a Future Meeting"
+      onClick = {this.togglePopup.bind(this)}
+      />
+      {this.state.showPopup ?
+        <PopUp
+        closePopup={this.togglePopup.bind(this)}
+        />
+        : null
+      }
 
-            </div>
-            </View>
-            </View>
+      </div>
+      </View>
+      <div>
+      <BigCalendar/>
+      </div>
+
+      </View>
       </div>
     )};
   }
-export default CalendarUI;
+  export default CalendarUI;
   // const rootElement = document.getElementById("root");
   // ReactDOM.render(<CalendarPage />, rootElement);
