@@ -1,13 +1,13 @@
-.sc-bdvvaa.smTdo:hover{
+.sc-jRQAMF.bOeeas:hover{
   transform: translate(0px, -1px);
-  background: #3f86fe;
+  background: #e48c5d;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   transition: background 0.1s ease-in-out;
 }
 
-.sc-bdvvaa.smTdo:active{
+.sc-jRQAMF.bOeeas:active{
   transform: translate(0px, 1px);
-  background: #004bcc;
+  background: #b35b2d;
   box-shadow: none;
   transition: background 0.1s ease-in-out;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./ButtonTwo.css";
 
 const ButtonTwo = styled.button`
 right: 20px;

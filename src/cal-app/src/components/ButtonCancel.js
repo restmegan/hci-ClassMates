@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import './ButtonCancel.css';
 
 const ButtonCancel = styled.button`
 right: 20px;

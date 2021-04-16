@@ -25,7 +25,6 @@ margin-bottom: 15px;
 export default ({ name, onClick }) => {
   return <Button onClick={onClick}>
   {name}
-
   </Button>;
 };
 
