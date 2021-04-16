@@ -66,7 +66,7 @@ const filters = noChannelNameFilter ? { type: 'messaging', members: { $in: [test
 const App = () => {
   const [isCreating, setIsCreating] = useState(false);
   const [isMobileNavVisible, setMobileNav] = useState(false);
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light'); // dark mode can be toggled here
 
   useChecklist(chatClient, targetOrigin);
 
