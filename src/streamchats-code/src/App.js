@@ -39,7 +39,7 @@ const sort = {
 const chatClient = StreamChat.getInstance(apiKey);
 
 // Adding some dummy users to the userbase:
-const johnSmith = {id: "john-smith", name: "John Smith", image: "https://demo.talkjs.com/img/sebastian.jpg"};
+const johnSmith = {id: "john-smith", name: "John Smith", image: "https://getstream.github.io/website-react-examples/social-messenger/static/media/photo-1463453091185-61582044d556.a10d0ecf.jpeg"};
 const lucyEaton = {id: "lucy-eaton", name: "Lucy Eaton", image: "https://thumbs.dreamstime.com/b/friendly-adult-casual-dressed-business-woman-student-girl-standing-straight-headshot-portrait-office-183889436.jpg"};
 const janeDoe = {id: "jane-doe", name: "Jane Doe", image: "https://previews.123rf.com/images/avemario/avemario1609/avemario160900319/62999486-smiling-teenage-girl-working-on-her-generic-laptop-computer-happy-cheerful-female-college-student-si.jpg"};
 const edJones = {id: "ed-jones", name: "Ed Jones", image: "https://thumbs.dreamstime.com/z/knappe-student-53808413.jpg"};
@@ -56,7 +56,7 @@ chatClient.disconnect();
 const testUser = {
   id: 'nameless-thunder-7',
   name: 'Alice Jefferson',
-  image: 'https://getstream.io/random_png/?id=nameless-thunder-7&name=nameless-thunder-7'
+  image: 'http://getstream.imgix.net/images/random_svg/A.png'
 };
 
 chatClient.connectUser(testUser, userToken);
