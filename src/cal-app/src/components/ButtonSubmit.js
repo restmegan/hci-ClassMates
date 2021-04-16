@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
+const ButtonSubmit = styled.button`
 right: 20px;
-height: 50px;
+height: 40px;
 border: none;
 outline: none;
 background: #005fff;
@@ -15,8 +15,7 @@ line-height: 18px;
 color: #ffffff;
 cursor: pointer;
 flex: 1;
-padding-left: 20px;
-padding-right: 20px;
+padding: 10px;
 margin: 10px;
 margin-bottom: 15px;
 `;
@@ -33,5 +32,5 @@ margin-bottom: 15px;
 // padding: 1rem;
 
 export default ({ name, onClick }) => {
-  return <Button onClick={onClick}>{name}</Button>;
+  return <ButtonSubmit onClick={onClick}>{name}</ButtonSubmit>;
 };

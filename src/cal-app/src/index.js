@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { View, Text } from "react-native";
 
 import Button from "./components/Button";
+import ButtonTwo from "./components/ButtonTwo";
 import NavButton from "./components/NavButton";
 import BigCalendar from "./components/BigCalendar";
 import PopUp from "./components/PopUp";
@@ -32,7 +33,7 @@ class CalendarUI extends React.Component {
       <View style={{flexDirection:'row',
                     zIndex: 1}}>
       <div>
-      <Button
+      <ButtonTwo
       name = "Start Instant Meeting"
       onClick = {this.togglePopup.bind(this)}
       />

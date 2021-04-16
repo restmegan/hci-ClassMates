@@ -1,4 +1,5 @@
 import React from 'react';
+import "./PopUp.css";
 import './style.css';
 import { SafeAreaView, StyleSheet, TextInput } from "react-native";
 import DatePicker from "react-datepicker";
@@ -6,12 +7,17 @@ import { Multiselect } from 'multiselect-react-dropdown';
 import "react-datepicker/dist/react-datepicker.css";
 import TimePicker from 'react-times';
 import Button from './Button';
+import ButtonTwo from './ButtonTwo';
+import ButtonCancel from './ButtonCancel';
+import ButtonSubmit from './ButtonSubmit';
 import BigCalendar from './BigCalendar';
 import {meetings} from "./meetings.js"
 
 import 'react-times/css/material/default.css'
 let currentDate = new Date();
 let currentTime = new Date();
+
+
 
 class Popup extends React.Component {
 
@@ -138,11 +144,11 @@ class Popup extends React.Component {
       <input type="checkbox" checked={this.state.checked} onClick={this.handleCheck} />
       </div>
       <div>
-      <Button
+      <ButtonCancel
       name = "Cancel"
-      onClick={this.props.closePopup}
+      onClick={this.props.closePopup} //TODO: show system message to open Zoom
       />
-      <Button
+      <ButtonSubmit
       name = "Schedule Meeting"
       onClick={() => {
         meetings.push({start: this.state.startDate, end: this.state.endDate, title: this.state.meetingTitle});
@@ -150,7 +156,7 @@ class Popup extends React.Component {
       //onClick={this.alertS}
       />
       <div>
-      (After pressing "Schedule Meeting" you can press "Cancel" to close the schedulig window) (if you can't input something just try to scroll a little bit)
+      (After pressing "Schedule Meeting" you can press "Cancel" to close the scheduling window) (if you can't input something just try to scroll a little bit)
       </div>
       </div>
       </div>
