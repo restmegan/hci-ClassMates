@@ -6,10 +6,10 @@ import DatePicker from "react-datepicker";
 import { Multiselect } from 'multiselect-react-dropdown';
 import "react-datepicker/dist/react-datepicker.css";
 import TimePicker from 'react-times';
-import Button from './Button';
-import ButtonTwo from './ButtonTwo';
-import ButtonCancel from './ButtonCancel';
-import ButtonSubmit from './ButtonSubmit';
+import Button from './Button.js';
+import ButtonTwo from './ButtonTwo.js';
+import ButtonCancel from './ButtonCancel.js';
+import ButtonSubmit from './ButtonSubmit.js';
 import BigCalendar from './BigCalendar';
 import {meetings} from "./meetings.js"
 

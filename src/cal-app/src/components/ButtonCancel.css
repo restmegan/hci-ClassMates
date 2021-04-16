@@ -1,11 +1,11 @@
-.sc-gKckTs.iLbcPX:hover{
+#buttonCancel:hover{
   transform: translate(0px, -1px);
   background: #bababa;
   box-shadow: 0px 1.5px 5px rgba(0, 0, 0, 0.5);
   transition: background 0.1s ease-in-out;
 }
 
-.sc-gKckTs.iLbcPX:active{
+#buttonCancel:active{
   transform: translate(0px, 1px);
   background: #8a8a8a;
   box-shadow: none;

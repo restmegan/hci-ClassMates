@@ -23,7 +23,8 @@ margin-bottom: 15px;
 `;
 
 export default ({ name, onClick }) => {
-  return <Button onClick={onClick}>
+  return <Button id="button"
+  onClick={onClick}>
   {name}
   </Button>;
 };

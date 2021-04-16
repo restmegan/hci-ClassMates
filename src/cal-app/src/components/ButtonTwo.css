@@ -1,11 +1,11 @@
-.sc-jRQAMF.bOeeas:hover{
+#buttonTwo:hover{
   transform: translate(0px, -1px);
   background: #e48c5d;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
   transition: background 0.1s ease-in-out;
 }
 
-.sc-jRQAMF.bOeeas:active{
+#buttonTwo:active{
   transform: translate(0px, 1px);
   background: #b35b2d;
   box-shadow: none;

@@ -23,5 +23,6 @@ margin-bottom: 15px;
 `;
 
 export default ({ name, onClick }) => {
-  return <ButtonCancel onClick={onClick}>{name}</ButtonCancel>;
+  return <ButtonCancel id="buttonCancel"
+  onClick={onClick}>{name}</ButtonCancel>;
 };

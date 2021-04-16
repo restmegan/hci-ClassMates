@@ -33,5 +33,6 @@ margin-bottom: 15px;
 // padding: 1rem;
 
 export default ({ name, onClick }) => {
-  return <ButtonSubmit onClick={onClick}>{name}</ButtonSubmit>;
+  return <ButtonSubmit id="buttonSubmit"
+  onClick={onClick}>{name}</ButtonSubmit>;
 };
