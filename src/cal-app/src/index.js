@@ -34,7 +34,7 @@ class CalendarUI extends React.Component {
                     zIndex: 1}}>
       <div>
       <ButtonTwo
-      name = "Start Instant Meeting"
+      name = "Start Meeting Now"
       onClick = {this.togglePopup.bind(this)}
       />
       {this.state.showPopup ?
@@ -47,7 +47,7 @@ class CalendarUI extends React.Component {
       </div>
       <div>
       <Button
-      name = "Plan a Future Meeting"
+      name = "Schedule a Meeting"
       onClick = {this.togglePopup.bind(this)}
       />
       {this.state.showPopup ?

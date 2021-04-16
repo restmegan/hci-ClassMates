@@ -1,7 +1,7 @@
 
 
 .App {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   text-align: center;
   font-size: 1.5em;
 }
@@ -16,9 +16,11 @@
   /* border: solid; */
   grid-column-gap: 50px;
   grid-template-columns: 30% 30% 30%;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .grid-item {
   border: solid;
   padding: 30px;
+  font-family: "Helvetica Neue", sans-serif;
 }

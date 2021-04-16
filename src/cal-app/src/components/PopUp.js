@@ -18,7 +18,6 @@ let currentDate = new Date();
 let currentTime = new Date();
 
 
-
 class Popup extends React.Component {
 
   constructor (props) {
@@ -88,7 +87,7 @@ class Popup extends React.Component {
     return (
       <div className='popup'>
       <div className='popup_inner'>
-      <h1>{"Schedule a Study Group"}</h1>
+      <h1>{"Schedule a Meeting"}</h1>
       <div>
       Meeting Title:
       <input

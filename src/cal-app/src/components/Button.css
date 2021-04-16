@@ -1,0 +1,13 @@
+/* .Button:after {
+   content: url(https://www.svgrepo.com/show/31993/calendar-empty-page-outline.svg);
+   width: 20px;
+   float: right;
+   margin-right: 5px;
+   margin-top: -2px;
+} */
+
+.Button:hover {
+  background: #dadada;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.07);
+  transition: background 0.1s ease-in-out;
+}
