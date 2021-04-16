@@ -15,7 +15,9 @@ import { MessagingChannelList } from './streamchats-code/src/components';
 import ChatFeedPic from "./ChatFeedPic.png";
 import BadCal from "./BadCal.png";
 
+
 export default function App() {
+
   return (
     <Router>
       <div>
@@ -25,7 +27,7 @@ export default function App() {
         </div>
         <Switch>
           <Route path="/chat">
-            <ChatPage />
+            <ChatPage/>
           </Route>
           <Route path="/calendar">
             <CalendarPage />
