@@ -20,7 +20,9 @@ import {
   CustomMessage,
   MessagingChannelHeader,
   MessagingChannelList,
+  DupeMessagingChannelList,
   MessagingChannelPreview,
+  DupeMessagingChannelPreview,
   MessagingInput,
   MessagingThread,} from './streamchats-code/src/components';
 import { useChecklist } from "./streamchats-code/src/ChecklistTasks.js";
@@ -150,13 +152,13 @@ function Home() {
           <h3><Link to="/chat">Chat</Link></h3>
           <Link to="/chat" onClick={() =>
             {alert("This back-end is not fully supported yet, so this just navigates to the Chat page and not a specific conversation.")}}>
-            <Chat client={chatClient} theme={`messaging ${theme}`}>
+            <Chat client={chatClient} theme={`messaging ${theme}`} id="home-channels">
                 <ChannelList
                   filters={filters}
                   sort={sort}
                   options={options}
-                  List={(props) => <MessagingChannelList {...props} onCreateChannel={() => setIsCreating(!isCreating)} />}
-                  Preview={(props) => <MessagingChannelPreview {...props} {...{ setIsCreating }} />}
+                  List={(props) => <DupeMessagingChannelList {...props} onCreateChannel={() => setIsCreating(!isCreating)} />}
+                  Preview={(props) => <DupeMessagingChannelPreview {...props} {...{ setIsCreating }} />}
                 />
             </Chat>
           </Link>

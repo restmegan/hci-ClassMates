@@ -60,9 +60,18 @@ const testUser = {
 };
 
 chatClient.connectUser(testUser, userToken);
-
 const filters = noChannelNameFilter ? { type: 'messaging', members: { $in: [testUser, johnSmith, lucyEaton, janeDoe] } } : { type: 'messaging'};
+//////
+const cidOne = "!members-yQFdoci87ZeMS1WA8CStNl4gRcQog8o45t7nRJtq6Jo";
+const cidTwo = "!members-60OZoC149lR6fvNHBcc3kLXK9Q1FXW_dXQu_44gPEMk";
+const filter = { cid: { $in: [cidOne, cidTwo, "first"]} };
+const mysort = [{ last_message_at: -1 }];
 
+const channels = chatClient.queryChannels(filter, mysort);
+const c = channels[0];
+// console.log(c.cid);
+
+//////
 const App = () => {
   const [isCreating, setIsCreating] = useState(false);
   const [isMobileNavVisible, setMobileNav] = useState(false);
