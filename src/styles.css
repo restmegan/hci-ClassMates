@@ -24,3 +24,39 @@
   padding: 30px;
   font-family: "Helvetica Neue", sans-serif;
 }
+
+.messaging__channel-list__header:first-of-type {
+  display: none;
+}
+
+/* .channel-preview__container {
+  height: 70px !important;
+  margin-bottom: 8px;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding-left: 8px;
+  border: 1px groove #fafafa !important;
+}
+
+.channel-preview__container.selected {
+  background: #fafafa !important;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.07) !important;
+  transition: background 0.1s ease-in-out;
+}
+
+.channel-preview__container.selected:hover {
+  background: #ffffff !important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.07) !important;
+  transition: background 0.1s ease-in-out !important;
+}
+*/
+.channel-preview__content-message {
+  margin: 0 !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
