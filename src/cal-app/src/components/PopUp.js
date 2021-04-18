@@ -151,12 +151,10 @@ class Popup extends React.Component {
       name = "Schedule Meeting"
       onClick={() => {
         meetings.push({start: this.state.startDate, end: this.state.endDate, title: this.state.meetingTitle});
+        this.props.closePopup();
       }}
       //onClick={this.alertS}
       />
-      <div>
-      (After pressing "Schedule Meeting" you can press "Cancel" to close the scheduling window) (if you can't input something just try to scroll a little bit)
-      </div>
       </div>
       </div>
       </div>
