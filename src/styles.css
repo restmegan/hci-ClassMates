@@ -1,9 +1,10 @@
 
 
 .App {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: Helvetica Neue, sans-serif;
   text-align: center;
   font-size: 1.5em;
+  font-weight: normal;
 }
 
 .box {
@@ -14,13 +15,188 @@
   justify-content: center;
   display: inline-grid;
   /* border: solid; */
-  grid-column-gap: 50px;
-  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 30px;
+  grid-template-columns: 33% 33% 33%;
   font-family: "Helvetica Neue", sans-serif;
 }
 
 .grid-item {
-  border: solid;
-  padding: 30px;
+  border: hidden;
+  padding: 0px;
   font-family: "Helvetica Neue", sans-serif;
+}
+
+#link:link, #link:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+#link:hover, #link:active {
+  text-decoration: underline;
+  text-decoration-color: #005fff;
+  color: #005fff;
+}
+
+#schedule-link:link, #schedule-link:visited, #schedule-link:hover, #schedule-link:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+#container {
+  padding: 0px;
+  margin: 0px;
+}
+
+#card-outer {
+  background: #ffffff;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: #dadada;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 0px;
+}
+
+#card-body {
+  height: 400px;
+  overflow: scroll;
+}
+
+#header {
+  font-size: 25px;
+  font-weight: 0;
+  height: 30px;
+  text-align: center;
+  text-decoration-color: #000000;
+  padding: 10px;
+  padding-left: 20px;
+  background: #f7f7f7;
+  border-bottom-style: inset;
+  border-bottom-width: 0.5px;
+  border-bottom-color: #e4e4e4;
+  font-family: Helvetica Neue, sans-serif;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+#header-title {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration-color: #000000;
+  font-family: Helvetica Neue, sans-serif;
+  margin: 0px;
+  order: 3;
+}
+
+#chevron {
+  font-size: 18px;
+  font-weight: 1000;
+  margin-top: 8px;
+  margin-left: 5px;
+  order: 4;
+  color: #005fff;
+}
+
+#test-card {
+  font-size: 20px;
+  background: #ffffff;
+  height: 80px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #f0f0f0;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+}
+
+#test-card:hover {
+  background: #fafaf8;
+}
+
+#end-card {
+  font-size: 20px;
+  background: #ffffff;
+  height: 80px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #f0f0f0;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#end-card:hover {
+  background: #fafaf8;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#space-card {
+  font-size: 20px;
+  background: none;
+  height: 80px;
+  border-style: none;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+}
+
+#happening-test-card {
+  font-size: 20px;
+  background: #ffffff;
+  height: 100px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #f0f0f0;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+#happening-name {
+  margin: 0px;
+  margin-top: 0px;
+}
+
+#happening-time {
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 5px;
+  font-size: 17px;
+  color: #858688;
+}
+
+#meeting-name {
+  margin: 0px;
+  margin-top: 0px;
+  /* text-align: left; */
+}
+
+#meeting-date {
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 17px;
+  font-weight: normal;
+  color: #005fff;
+  /* text-align: left; */
+}
+
+#meeting-time {
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #005fff;
+  /* text-align: left; */
+}
+
+#homelink:link, #homelink:visited, #homelink:hover, #homelink:active {
+  text-decoration: underline;
+  text-decoration-color: #005fff;
+  color: #005fff;
 }
