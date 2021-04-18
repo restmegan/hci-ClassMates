@@ -105,12 +105,12 @@ const DupeMessagingChannelPreview = (props) => {
       }}
     >
       {getAvatarGroup(members)}
-      <div className='channel-preview__content-wrapper'>
+      <div className='channel-preview__content-wrapper' id="duplicate-content-wrapper">
         <div className='channel-preview__content-top'>
-          <p className='channel-preview__content-name'>{channel.data.name || getChannelName(members)}</p>
-          <p className='channel-preview__content-time'>{getTimeStamp(channel)}</p>
+          <p className='channel-preview__content-name' id="dupe-content-name">{channel.data.name || getChannelName(members)}</p>
+          <p className='channel-preview__content-time' id="dupe-content-time">{getTimeStamp(channel)}</p>
         </div>
-        <p className='channel-preview__content-message'>{latestMessage || 'Send a message'}</p>
+        <p className='channel-preview__content-message' id="dupe-content-message">{latestMessage || 'Send a message'}</p>
       </div>
     </div>
   );

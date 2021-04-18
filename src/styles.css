@@ -1,14 +1,16 @@
 
 
 .App {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   text-align: center;
   font-size: 1.5em;
   font-weight: normal;
+  background: #fafafa;
 }
 
 .box {
   border-style: solid;
+  background: #fafafa;
 }
 
 .grid-container {
@@ -18,12 +20,14 @@
   grid-column-gap: 30px;
   grid-template-columns: 33% 33% 33%;
   font-family: "Helvetica Neue", sans-serif;
+  background: #fafafa;
 }
 
 .grid-item {
   border: hidden;
   padding: 0px;
   font-family: "Helvetica Neue", sans-serif;
+  background: #fafafa;
 }
 
 #link:link, #link:visited {
@@ -45,6 +49,7 @@
 #container {
   padding: 0px;
   margin: 0px;
+  width: 375px;
 }
 
 #card-outer {
@@ -171,6 +176,7 @@
 #meeting-name {
   margin: 0px;
   margin-top: 0px;
+  font-weight: 500;
   /* text-align: left; */
 }
 
@@ -180,7 +186,7 @@
   margin-top: 10px;
   margin-bottom: 0px;
   font-size: 17px;
-  font-weight: normal;
+  font-weight: 500;
   color: #005fff;
   /* text-align: left; */
 }
@@ -199,4 +205,66 @@
   text-decoration: underline;
   text-decoration-color: #005fff;
   color: #005fff;
+}
+
+#invisHeader {
+  display: none !important;
+}
+
+#channels-container {
+  padding: 0px !important;
+  width: 375px;
+}
+
+/* duplicate = channel preview containers */
+#duplicate {
+  height: 80px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  border-radius: 0px !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding-left: 8px;
+  background: #ffffff !important;
+  border: 0.5px solid #f0f0f0 !important;
+}
+
+#duplicate:hover {
+  background: #fafaf8 !important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.07) !important;
+  transition: background 0.1s ease-in-out !important;
+}
+
+#duplicate.selected {
+  background: #ffffff !important;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.07) !important;
+  transition: background 0.1s ease-in-out;
+}
+
+#duplicate.selected:hover {
+  background: #fafaf8 !important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.07) !important;
+  transition: background 0.1s ease-in-out !important;
+}
+
+#duplicate-content-wrapper {
+  text-align: left;
+}
+
+#dupe-content-name {
+  font-size: 17px;
+  max-width: 180px;
+}
+
+#dupe-content-time {
+  font-size: 14px;
+}
+
+#dupe-content-message {
+  font-size: 14px;
+  max-width: 250px;
 }

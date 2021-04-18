@@ -28,7 +28,7 @@ const DupeMessagingChannelList = ({ children, error = false, loading, onCreateCh
 
   const ListHeaderWrapper = ({ children }) => {
     return (
-      <div className='messaging__channel-list'>
+      <div className='messaging__channel-list' id="channels-container">
         <div className='messaging__channel-list__header' id="invisHeader">
           <Avatar image={image} name={name} size={40} />
           <div className='messaging__channel-list__header__name'>{name || id}</div>
