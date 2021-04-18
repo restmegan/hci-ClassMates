@@ -96,7 +96,7 @@ function Home() {
                 </MDBCardHeader>
               </Link>
               <Link to="/calendar" id="schedule-link" onClick={() =>
-                {alert("This back-end is not fully supported, so this just navigates to the Calendar page and not a specific conversation.")}}>
+                {alert("This back-end is not fully supported, so this just navigates to the Calendar page and not a specific event.")}}>
                 <MDBCardBody id="card-body">
                   <MDBCard id="test-card">
                     <h4 id="meeting-name">Meeting with Jane Doe</h4>

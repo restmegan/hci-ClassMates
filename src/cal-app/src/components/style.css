@@ -41,6 +41,10 @@
   z-index: -1;
 }
 
+.rbc-current-time-indicator {
+  z-index: 0 !important;
+}
+
 .wrapper:hover .bigcalendar {
   display: block;
 }
