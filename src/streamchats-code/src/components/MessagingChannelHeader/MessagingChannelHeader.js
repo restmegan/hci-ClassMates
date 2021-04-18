@@ -106,7 +106,7 @@ const MessagingChannelHeader = (props) => {
         autoFocus
         className='channel-header__edit-input'
         onBlur={updateChannel}
-        onChange={(e) => setChannelName(e.target.value)}
+        onChange={(e) => {setChannelName(e.target.value);}}
         placeholder='Type a new name for the chat'
         ref={inputRef}
         value={channelName}
