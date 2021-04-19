@@ -63,7 +63,7 @@
 
 #card-body {
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #header {
@@ -260,6 +260,7 @@
 
 #dupe-content-time {
   font-size: 14px;
+  margin-right: 10px;
 }
 
 #dupe-content-message {
