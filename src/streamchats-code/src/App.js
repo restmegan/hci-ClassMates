@@ -117,7 +117,7 @@ const App = () => {
           Preview={(props) => <MessagingChannelPreview {...props} {...{ setIsCreating }} />}
         />
       </div>
-      <div>
+      <div id="lmao">
         <Channel maxNumberOfFiles={10} multipleUploads={true}>
           {isCreating && <CreateChannel toggleMobile={toggleMobile} onClose={() => setIsCreating(false)} />}
           <Window>

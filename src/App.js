@@ -26,6 +26,8 @@ import {
   MessagingInput,
   MessagingThread,} from './streamchats-code/src/components';
 import { useChecklist } from "./streamchats-code/src/ChecklistTasks.js";
+import { ScrollView } from 'react-native';
+import { useScrollToTop } from '@react-navigation/native';
 
 import CalendarPage from "./CalendarPage";
 import ChatPage from "./ChatPage";
@@ -79,8 +81,9 @@ const filters = noChannelNameFilter ? { type: 'messaging', members: { $in: [test
 // END OF CHAT RE-INSTATION
 
 export default function App() {
+
   return (
-    <Router>
+    <Router onUpdate={() => window.scrollTo(0, 0)}>
       <div>
       <div className="App">
         <h1>ClassMates</h1>
@@ -145,7 +148,7 @@ function Home() {
           <MDBContainer id="container">
             <MDBCard id="card-outer">
               <MDBCardHeader id="header" color="deep-orange lighten-1">Happening Now</MDBCardHeader>
-              <MDBCardBody id="card-body">
+              <MDBCardBody id="now-card-body">
               <MDBCard id="happening-test-card">
                 <h4 id="happening-name">Meeting with Jane Doe</h4>
                 <h6 id="happening-time">2:00pm – 3:00pm</h6>

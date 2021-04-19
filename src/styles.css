@@ -64,6 +64,12 @@
 #card-body {
   height: 400px;
   overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#now-card-body {
+  height: 400px;
+  overflow-y: hidden;
 }
 
 #header {
@@ -213,6 +219,7 @@
 #channels-container {
   padding: 0px !important;
   width: 375px;
+  overflow-x: hidden;
 }
 
 /* duplicate = channel preview containers */
