@@ -35,7 +35,8 @@ class CalendarUI extends React.Component {
       <div>
       <ButtonTwo
       name = "Start Meeting Now"
-      onClick = {this.togglePopup.bind(this)}
+      onClick={() =>
+        {alert("Loading Zoom Meeting... (back-end not supported, go back)")}}
       />
       {this.state.showPopup ?
         <PopUp

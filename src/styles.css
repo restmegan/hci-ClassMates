@@ -79,7 +79,6 @@
   border-bottom-width: 0.5px;
   border-bottom-color: #e4e4e4;
   font-family: Helvetica Neue, sans-serif;
-  overflow: scroll;
   display: flex;
   justify-content: center;
 }
