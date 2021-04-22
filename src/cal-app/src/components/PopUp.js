@@ -105,6 +105,7 @@ class Popup extends React.Component {
       timeIntervals={5}
       timeCaption="time"
       dateFormat="MMMM d, yyyy h:mm aa"
+      minDate={currentDate}
       />
       </div>
       <div>
@@ -117,6 +118,7 @@ class Popup extends React.Component {
       timeIntervals={5}
       timeCaption="time"
       dateFormat="MMMM d, yyyy h:mm aa"
+      minDate={this.state.startDate}
       />
       </div>
       <div>
