@@ -79,3 +79,11 @@
   border-left-color: #ccc;
   right: 1em;
 }
+
+#description {
+  margin-top: 10px;
+}
+
+#zoom {
+  margin-top: 5px;
+}

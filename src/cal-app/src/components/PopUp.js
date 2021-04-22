@@ -28,8 +28,8 @@ class Popup extends React.Component {
       startDate: new Date(),
       endDate: new Date(),
       description: "",
-      options: [{name: 'IS4300', id: 1},{name: 'CS3000', id: 2},{name: 'Lucy Eaton', id: 3},{name: 'John Smith', id: 4},
-      {name: 'Study Squad(Lucy, John, ...)', id: 5},{name: 'Lucy Eaton, Ed Jones', id: 6},{name: 'Amanda Snow', id: 7}]
+      options: [{name: 'IS4300', id: 1},{name: 'Lucy Eaton', id: 3},{name: 'John Smith', id: 4},
+      {name: 'Study Squad(John, Jane, ...)', id: 5},{name: 'Lucy Eaton, Jane Doe', id: 6},{name: 'Jane Doe', id: 7}]
     };
     this.myChangeHandler = this.myChangeHandler.bind(this);
     this.handleSChange = this.handleSChange.bind(this);
@@ -131,7 +131,7 @@ class Popup extends React.Component {
       displayValue="name" // Property name to display in the dropdown options
       />
       </div>
-      <div>
+      <div id="description">
       Description(optional) :
       <textarea
       value={this.state.description}
@@ -140,7 +140,7 @@ class Popup extends React.Component {
       cols={30}
       />
       </div>
-      <div>
+      <div id="zoom">
       Create a Zoom meeting?
       <input type="checkbox" checked={this.state.checked} onClick={this.handleCheck} />
       </div>

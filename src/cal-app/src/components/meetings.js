@@ -9,7 +9,7 @@ export const meetings=[
   {
     start: new Date(2021, 3, 1, 9, 30, 0),
     end: new Date(2021, 3, 1, 11, 30, 0),
-    title: "Group Project CS2510"
+    title: "Group Project IS4300"
   },
   {
     start: moment().add(-1, "hours").toDate(),
