@@ -220,6 +220,7 @@
   padding: 0px !important;
   width: 375px;
   overflow-x: hidden;
+  height: inherit;
 }
 
 /* duplicate = channel preview containers */

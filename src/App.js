@@ -40,10 +40,10 @@ import ButtonJoinNow from "./ButtonJoinNow.js";
 
 /// BEFORE APP, need to re-instantiate Chat back-end to display messages on Home page, lines 40-80.
 const urlParams = new URLSearchParams(window.location.search);
-const apiKey = 'e86kwpdunrzr'; // This is tied to the dhankher.a account
+const apiKey = '3dm52ykvj3q9'; // This is tied to the account we made
 const user = urlParams.get('user') || process.env.REACT_APP_USER_ID;
 
-const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoibmFtZWxlc3MtdGh1bmRlci03In0.9U6fCnGgH8gawPO7yk2DHf2-NMQhqi78YT9DbzsfnK8';
+const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYXV0dW1uLWJsb2NrLTAifQ.pYD1IdCHIbWksXVHyaewkkB_5l1o3EgRZ5sv8Jj6dIQ';
 
 const targetOrigin = urlParams.get('target_origin') || process.env.REACT_APP_TARGET_ORIGIN;
 const noChannelNameFilter = urlParams.get('no_channel_name_filter') || false;
@@ -72,7 +72,7 @@ chatClient.connectUser(edJones, chatClient.devToken("ed-jones"));
 chatClient.disconnect();
 //This is the test user who is logged into ClassMates
 const testUser = {
-  id: 'nameless-thunder-7',
+  id: 'autumn-block-0',
   name: 'Alice Jefferson',
   image: 'http://getstream.imgix.net/images/random_svg/A.png'
 };

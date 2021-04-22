@@ -43,6 +43,7 @@ body::-webkit-scrollbar-thumb {
 
 .str-chat.str-chat-channel-list.messaging {
   background: #fafafa;
+  height: 80vh;
 }
 
 /* Conversations panel on the left */

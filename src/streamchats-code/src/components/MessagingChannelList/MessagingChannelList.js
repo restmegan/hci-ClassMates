@@ -17,7 +17,8 @@ const MessagingChannelList = ({ children, error = false, loading, onCreateChanne
         image: "https://i.pinimg.com/originals/9e/ef/54/9eef54b8786e4d43a332e7cd28683d55.png"
       });
       await channel.watch();
-      await channel.addMembers([client.user.id]);
+      await channel.addMembers([client.user.id, "lucy-eaton", "jane-doe", "ed-jones", "john-smith"]);
+      // await channel.addMembers(["lucy-eaton", "jane-doe", "ed-jones", "john-smith"]);
       setActiveChannel(channel);
     };
 
