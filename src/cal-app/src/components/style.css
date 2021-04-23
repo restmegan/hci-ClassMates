@@ -81,9 +81,30 @@
 }
 
 #description {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #zoom {
   margin-top: 5px;
+}
+
+#multiselectContainerReact {
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0px !important;
+}
+
+.search-wrapper {
+  overflow: visible;
+  height: inherit;
+  float: none;
+  padding: 0px !important;
+}
+
+.searchBox {
+  width: 100%;
+  min-height: 30px;
+  margin: 0px !important;
+  margin-left: 5px !important;
+  padding: 0px;
 }
